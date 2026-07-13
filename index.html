@@ -1,87 +1,120 @@
+```html
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>How to Build a Gaming PC</title>
+    <title>Gaming PC Builder Guide</title>
+
+    <meta name="description" content="A beginner's guide to building your own gaming PC.">
+
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
 <header>
-    <h1>How to Build a Gaming PC</h1>
+
+    <h1>Gaming PC Builder Guide</h1>
 
     <nav>
-        <a href="#">Home</a>
-        <a href="#">Parts</a>
-        <a href="#">Guide</a>
-        <a href="#">FAQ</a>
+        <a href="#home">Home</a>
+        <a href="#parts">Parts</a>
+        <a href="#guide">Guide</a>
+        <a href="#contact">Contact</a>
     </nav>
+
 </header>
 
-<section class="hero">
+<section class="hero" id="home">
+
     <h2>Learn How to Build Your Own Gaming PC</h2>
 
-    <p>Building a gaming PC is way easier than you might think!</p>
+    <p>
+        Building your own gaming PC is easier than most people think.
+        This website explains the parts you need and the basic steps to get started.
+    </p>
 
     <button onclick="showMessage()">Get Started</button>
-</section>
-
-<section>
-
-<h2>Why Build Your Own PC?</h2>
-
-<ul>
-<li>Save money</li>
-<li>Better performance</li>
-<li>Easy upgrades</li>
-</ul>
 
 </section>
 
 <section>
 
-<h2>Parts You Need</h2>
+    <h2>Why Build Your Own PC?</h2>
 
-<ul>
-<li>CPU</li>
-<li>GPU</li>
-<li>Motherboard</li>
-<li>RAM</li>
-<li>Storage</li>
-<li>Power Supply</li>
-</ul>
+    <ul>
+        <li>It can save you money.</li>
+        <li>You get to choose the parts you want.</li>
+        <li>It is easier to upgrade later.</li>
+        <li>You can build a PC that fits your budget.</li>
+    </ul>
 
 </section>
 
-<section>
+<section id="parts">
 
-<h2>Basic Steps</h2>
+    <h2>Parts You Need</h2>
 
-<ol>
+    <ul>
+        <li>CPU</li>
+        <li>GPU</li>
+        <li>Motherboard</li>
+        <li>RAM</li>
+        <li>Storage (SSD or HDD)</li>
+        <li>Power Supply</li>
+        <li>Computer Case</li>
+    </ul>
 
-<li>Install CPU</li>
+</section>
 
-<li>Install RAM</li>
+<section id="guide">
 
-<li>Install Motherboard</li>
+    <h2>Basic Steps</h2>
 
-<li>Install GPU</li>
+    <ol>
+        <li>Install the CPU.</li>
+        <li>Install the RAM.</li>
+        <li>Put the motherboard into the case.</li>
+        <li>Install the power supply.</li>
+        <li>Install the graphics card.</li>
+        <li>Connect all the cables.</li>
+        <li>Turn on the computer and install Windows.</li>
+    </ol>
 
-<li>Connect Power Supply</li>
+</section>
 
-</ol>
+<section id="contact">
+
+    <h2>Contact</h2>
+
+    <form>
+
+        <label for="name">Name:</label><br>
+        <input type="text" id="name" required><br><br>
+
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" required><br><br>
+
+        <label for="question">Questions:</label><br>
+        <textarea id="question" rows="4" cols="35"></textarea><br><br>
+
+        <button type="submit">Submit</button>
+
+    </form>
 
 </section>
 
 <footer>
 
-<p>Created by Jadon Russell</p>
+    <p>Created by Jadon Russell</p>
 
 </footer>
 
 <script src="script.js"></script>
 
 </body>
+
 </html>
+```
