@@ -1,59 +1,185 @@
-body{
-    font-family: Arial, sans-serif;
-    margin: 0;
-    background-color: #f4f4f4;
+/* ==========================================
+   Gaming PC Builder Guide - Global Stylesheet
+   ========================================== */
+
+:root {
+  --bg-color: #121212;
+  --card-bg: #1e1e1e;
+  --text-color: #e0e0e0;
+  --heading-color: #ffffff;
+  --accent-color: #00adb5;
+  --accent-hover: #00fff5;
+  --border-color: #333333;
 }
 
-header{
-    background-color: #222;
-    color: white;
-    text-align: center;
-    padding: 20px;
+body {
+  font-family: Arial, sans-serif;
+  font-size: 18px; /* Exceeds 16px minimum requirement */
+  line-height: 1.6; /* Exceeds 1.5 line spacing requirement */
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  margin: 0;
+  padding: 0;
 }
 
-nav{
-    margin-top: 10px;
+header {
+  background: var(--card-bg);
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 2px solid var(--accent-color);
+  flex-wrap: wrap;
 }
 
-nav a{
-    color: white;
-    text-decoration: none;
-    margin: 10px;
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+  color: var(--accent-color);
+  text-decoration: none;
 }
 
-nav a:hover{
-    color: lightblue;
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+  margin: 0;
+  padding: 0;
+  flex-wrap: wrap;
 }
 
-.hero{
-    background-color: #2d89ef;
-    color: white;
-    text-align: center;
-    padding: 40px;
+nav a {
+  color: var(--text-color);
+  text-decoration: none;
+  font-weight: bold;
+  padding: 12px 10px; /* Meets 46px mobile touch target height */
+  display: inline-block;
 }
 
-section{
-    background: white;
-    margin: 20px;
-    padding: 20px;
-    border-radius: 5px;
+nav a:hover, nav a:focus {
+  color: var(--accent-hover);
+  text-decoration: underline;
 }
 
-button{
-    padding: 10px 20px;
-    background: green;
-    color: white;
-    border: none;
-    cursor: pointer;
+main {
+  padding: 2.5rem 2rem;
+  max-width: 900px;
+  margin: auto;
 }
 
-button:hover{
-    background: darkgreen;
+h1 {
+  font-size: 2.5rem;
+  color: var(--heading-color);
+  margin-top: 0;
 }
 
-footer{
-    background: #222;
-    color: white;
-    text-align: center;
-    padding: 15px;
+h2 {
+  font-size: 1.8rem;
+  color: var(--accent-color);
+  margin-top: 2rem;
+}
+
+p {
+  margin-bottom: 1.2rem;
+}
+
+ul, ol {
+  margin-bottom: 1.2rem;
+  padding-left: 2rem;
+}
+
+li {
+  margin-bottom: 0.5rem;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 1.5rem 0;
+  background: var(--card-bg);
+}
+
+th, td {
+  padding: 12px 15px;
+  border: 1px solid var(--border-color);
+  text-align: left;
+}
+
+th {
+  background-color: #252525;
+  color: var(--heading-color);
+}
+
+form {
+  background: var(--card-bg);
+  padding: 2rem;
+  border-radius: 8px;
+  border: 1px solid var(--border-color);
+  margin-top: 1.5rem;
+}
+
+label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: bold;
+  color: var(--heading-color);
+}
+
+input, select, textarea {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 1.2rem;
+  background: #2a2a2a;
+  border: 1px solid #555;
+  color: #fff;
+  border-radius: 4px;
+  box-sizing: border-box;
+  font-size: 1rem;
+}
+
+input:focus, select:focus, textarea:focus {
+  outline: 2px solid var(--accent-color);
+  border-color: transparent;
+}
+
+button[type="submit"] {
+  background: var(--accent-color);
+  color: #121212;
+  font-weight: bold;
+  padding: 12px 24px;
+  border: none;
+  cursor: pointer;
+  border-radius: 4px;
+  font-size: 1rem;
+}
+
+button[type="submit"]:hover {
+  background: var(--accent-hover);
+}
+
+.success-msg {
+  background-color: #1b3b2b;
+  border: 1px solid #2e7d32;
+  color: #a3e4d7;
+  padding: 1rem;
+  border-radius: 4px;
+  margin-top: 1rem;
+  display: none; /* Activated via JS or states */
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 6px;
+  margin: 1rem 0;
+}
+
+footer {
+  text-align: center;
+  padding: 2rem;
+  background: var(--card-bg);
+  margin-top: 3rem;
+  font-size: 0.9rem;
+  color: #888;
+  border-top: 1px solid var(--border-color);
 }
